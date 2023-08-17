@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import ExpenseItem from './components/ExpenseItem';
+import Expenses from './components/Expenses';
 
 export default function App() {
   const expenses = [
@@ -26,11 +26,8 @@ export default function App() {
   ];
   return (
     <div>
-      <ExpenseItem expense={expenses[0]}></ExpenseItem>
-
-      <ExpenseItem expense={expenses[1]}></ExpenseItem>
-
-      <ExpenseItem expense={expenses[2]}></ExpenseItem>
+      <h2>Let's get started!</h2>
+      <Expenses items={expenses} />
     </div>
   );
 }
